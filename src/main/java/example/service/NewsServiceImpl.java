@@ -10,8 +10,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.ParameterMode;
 import javax.persistence.PersistenceContext;
 import javax.persistence.StoredProcedureQuery;
+import java.sql.Date;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 
@@ -48,10 +48,12 @@ public class NewsServiceImpl implements NewsService{
 	}
 	
 	public List<News> searchNews(String searchContent){
-
+		System.out.println("searchcontent : " + searchContent);
 		StoredProcedureQuery query = entityManager.createStoredProcedureQuery("SearchNews");
 		query.registerStoredProcedureParameter(1, String.class, ParameterMode.IN);
 		query.setParameter(1, searchContent);
+
+		System.out.println(query);
 
 		List<Object[]> storedProcedureResults = query.getResultList();
 		//lstAllNews= query.getResultList();
@@ -63,7 +65,7 @@ public class NewsServiceImpl implements NewsService{
 			news.setNews_title(String.valueOf(item[1]));
 			news.setNews_content(String.valueOf(item[2]));
 			news.setNews_image(String.valueOf(item[3]));
-			news.setDate_created(new Date(String.valueOf(item[4])));
+			news.setDate_created(Date.valueOf(String.valueOf(item[4])));
 			news.setNews_file(String.valueOf(item[5]));
 //			lstAllNews.add(new News((int)item[0], (String)item[1],  (String) item[2], (Date) item[3], (String) item[4], (String) item[5]));
 			lstAllNews.add(news);
