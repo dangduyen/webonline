@@ -247,42 +247,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="row category-body">
-						<div class="col-md-5">
-							<img class="img-thumbnail"
-								 src="static/public/images/home1.jpg" alt="Warning">
-						</div>
-						<div class="col-md-7">
-							<h4>
-								<a class="cato-title" href="#">Cây trồng và đời sống</a>
-							</h4>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-							tempore. Eaque numquam optio obcaecati saepe, ut recusandae
-							accusamus, possimus quas nihil sapiente aperiam vitae
-							consequuntur distinctio iste consequatur, hic sed!
-							<div class="author pull-right">
-								<a style="font-style: italic;" href="#">Read more ...</a>
-							</div>
-						</div>
-					</div>
-                    <div class="row category-body">
-                        <div class="col-md-5">
-                            <img class="img-thumbnail"
-                                 src="static/public/images/self.png" alt="Warning">
-                        </div>
-                        <div class="col-md-7">
-                            <h4>
-                                <a class="cato-title" href="#">Ý tưởng của cuộc sống hiện đại</a>
-                            </h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-                            tempore. Eaque numquam optio obcaecati saepe, ut recusandae
-                            accusamus, possimus quas nihil sapiente aperiam vitae
-                            consequuntur distinctio iste consequatur, hic sed!
-                            <div class="author pull-right">
-                                <a style="font-style: italic;" href="#">Read more ...</a>
-                            </div>
-                        </div>
-                    </div>
 					<br>
 				</div>
 
